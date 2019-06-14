@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stock Symbol Prices</title>
+  <style type="text/css">
+    button,
+    div,
+    form,
+    input {
+      margin: 10px;
+    }
+    
+  </style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Stock Search</h1>
+    <form id="stock-form">
+      <label for="stock-input">Add a Stock Symbol</label>
+      <input type="text" id="stock-input">
+
+      <!-- Button triggers new stock to be added -->
+      <input id="add-stock" type="submit" value="Add a Stock Symbol">
+    </form>
+    <!-- Rendered Buttons will get Dumped Here  -->
+    <div id="buttons-view"></div>
+
+
+    <!-- stocks will Get Dumped Here -->
+    <div id="stocks-view" class="card"></div>
+
+    
+
+  
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://billyatge.github.io/stocksList/app.js"></script>
+  </div>
+</body>
+
+</html>
